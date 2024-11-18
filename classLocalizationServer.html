@@ -85,6 +85,8 @@ $(document).ready(function(){initNavTree('classLocalizationServer.html',''); ini
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLocalizationServer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LocalizationServer Class Reference</div>  </div>
@@ -124,6 +126,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaaaed52202572dc218c8018af078d486"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#aaaaed52202572dc218c8018af078d486">LocalizationServer</a> ()</td></tr>
 <tr class="memdesc:aaaaed52202572dc218c8018af078d486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classLocalizationServer.html" title="Provides localization using AprilTags and manages an action server for localization feedback.">LocalizationServer</a> class.  <a href="classLocalizationServer.html#aaaaed52202572dc218c8018af078d486">More...</a><br /></td></tr>
 <tr class="separator:aaaaed52202572dc218c8018af078d486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6639593417024cd702519073f8f0768f"><td class="memItemLeft" align="right" valign="top">rclcpp_action::GoalResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a6639593417024cd702519073f8f0768f">handle_goal</a> (const rclcpp_action::GoalUUID &amp;, std::shared_ptr&lt; const Localization::Goal &gt;)</td></tr>
+<tr class="memdesc:a6639593417024cd702519073f8f0768f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles goal requests from clients.  <a href="classLocalizationServer.html#a6639593417024cd702519073f8f0768f">More...</a><br /></td></tr>
+<tr class="separator:a6639593417024cd702519073f8f0768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb96a7ea606148af6dd9f2e47514644"><td class="memItemLeft" align="right" valign="top">rclcpp_action::CancelResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a4eb96a7ea606148af6dd9f2e47514644">handle_cancel</a> (const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt;)</td></tr>
+<tr class="memdesc:a4eb96a7ea606148af6dd9f2e47514644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles cancellation requests from clients.  <a href="classLocalizationServer.html#a4eb96a7ea606148af6dd9f2e47514644">More...</a><br /></td></tr>
+<tr class="separator:a4eb96a7ea606148af6dd9f2e47514644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e10ac8c67608b8f11d3c8f8e45d7b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ab6e10ac8c67608b8f11d3c8f8e45d7b3">handle_accepted</a> (const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt; goal_handle)</td></tr>
+<tr class="memdesc:ab6e10ac8c67608b8f11d3c8f8e45d7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts and starts the goal execution.  <a href="classLocalizationServer.html#ab6e10ac8c67608b8f11d3c8f8e45d7b3">More...</a><br /></td></tr>
+<tr class="separator:ab6e10ac8c67608b8f11d3c8f8e45d7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6777f30b8425a9aa36c4a406b62bdb8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a6777f30b8425a9aa36c4a406b62bdb8e">execute</a> (const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt; goal_handle)</td></tr>
+<tr class="memdesc:a6777f30b8425a9aa36c4a406b62bdb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the localization process.  <a href="classLocalizationServer.html#a6777f30b8425a9aa36c4a406b62bdb8e">More...</a><br /></td></tr>
+<tr class="separator:a6777f30b8425a9aa36c4a406b62bdb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b97610444e1554e4734e3dd2205a5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a3b97610444e1554e4734e3dd2205a5cf">align_robot</a> ()</td></tr>
+<tr class="memdesc:a3b97610444e1554e4734e3dd2205a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the robot with the detected AprilTag.  <a href="classLocalizationServer.html#a3b97610444e1554e4734e3dd2205a5cf">More...</a><br /></td></tr>
+<tr class="separator:a3b97610444e1554e4734e3dd2205a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532331fde958fc7b08a23bf2c45f42b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a532331fde958fc7b08a23bf2c45f42b1">d455_detect_apriltag</a> (const sensor_msgs::msg::Image::SharedPtr inputImage)</td></tr>
+<tr class="memdesc:a532331fde958fc7b08a23bf2c45f42b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects AprilTags in images from the D455 camera.  <a href="classLocalizationServer.html#a532331fde958fc7b08a23bf2c45f42b1">More...</a><br /></td></tr>
+<tr class="separator:a532331fde958fc7b08a23bf2c45f42b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845675f3d528b5fbede53653f8cd4155"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a845675f3d528b5fbede53653f8cd4155">d456_detect_apriltag</a> (const sensor_msgs::msg::Image::SharedPtr inputImage)</td></tr>
+<tr class="memdesc:a845675f3d528b5fbede53653f8cd4155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects AprilTags in images from the D456 camera.  <a href="classLocalizationServer.html#a845675f3d528b5fbede53653f8cd4155">More...</a><br /></td></tr>
+<tr class="separator:a845675f3d528b5fbede53653f8cd4155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c095febbc7cca264875ecf30e68943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ac0c095febbc7cca264875ecf30e68943">process_apriltag</a> (const sensor_msgs::msg::Image::SharedPtr &amp;inputImage, bool &amp;tag1_detected, bool &amp;tag2_detected, const rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr &amp;overlay_publisher, bool calculate_yaw_)</td></tr>
+<tr class="memdesc:ac0c095febbc7cca264875ecf30e68943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes detected AprilTags, calculates pose, and publishes overlay image.  <a href="classLocalizationServer.html#ac0c095febbc7cca264875ecf30e68943">More...</a><br /></td></tr>
+<tr class="separator:ac0c095febbc7cca264875ecf30e68943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39941fdeec20b43e0ed84f2622128bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#aa39941fdeec20b43e0ed84f2622128bf">normalize_angle</a> (double angle)</td></tr>
+<tr class="memdesc:aa39941fdeec20b43e0ed84f2622128bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes an angle to the range [-pi, pi].  <a href="classLocalizationServer.html#aa39941fdeec20b43e0ed84f2622128bf">More...</a><br /></td></tr>
+<tr class="separator:aa39941fdeec20b43e0ed84f2622128bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199f87e3d504c1e0cef3aafa285095d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a199f87e3d504c1e0cef3aafa285095d8">calculate_distances</a> (const cv::Vec3d &amp;tvec, double &amp;lateral_distance, double &amp;depth_distance)</td></tr>
+<tr class="memdesc:a199f87e3d504c1e0cef3aafa285095d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates lateral and depth distances from translation vector.  <a href="classLocalizationServer.html#a199f87e3d504c1e0cef3aafa285095d8">More...</a><br /></td></tr>
+<tr class="separator:a199f87e3d504c1e0cef3aafa285095d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f8a5cbfb4adc284132e852fc90150f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a16f8a5cbfb4adc284132e852fc90150f">calculate_yaw</a> (const cv::Vec3d &amp;rvec, double &amp;<a class="el" href="classLocalizationServer.html#aba030202ee79f6f6b69446766de8a908">tag1_yaw</a>)</td></tr>
+<tr class="memdesc:a16f8a5cbfb4adc284132e852fc90150f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates yaw from rotation vector.  <a href="classLocalizationServer.html#a16f8a5cbfb4adc284132e852fc90150f">More...</a><br /></td></tr>
+<tr class="separator:a16f8a5cbfb4adc284132e852fc90150f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a91c09d36b1066926d2114963bfb83d8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a91c09d36b1066926d2114963bfb83d8b">d455_tag1_detected_</a></td></tr>
+<tr class="separator:a91c09d36b1066926d2114963bfb83d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fff4e270efd274879980f0f01610dea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a1fff4e270efd274879980f0f01610dea">d455_tag2_detected_</a></td></tr>
+<tr class="separator:a1fff4e270efd274879980f0f01610dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482a7acc3ec55c3b1fddbc516cba95f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a482a7acc3ec55c3b1fddbc516cba95f1">d456_tag1_detected_</a></td></tr>
+<tr class="separator:a482a7acc3ec55c3b1fddbc516cba95f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b05ce72ba3379cca7f55f81b203a32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ad9b05ce72ba3379cca7f55f81b203a32">d456_tag2_detected_</a></td></tr>
+<tr class="separator:ad9b05ce72ba3379cca7f55f81b203a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7544185892eb8ad3ae48d30ba84884e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a7544185892eb8ad3ae48d30ba84884e3">turn_direction_set_</a></td></tr>
+<tr class="separator:a7544185892eb8ad3ae48d30ba84884e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3cd53523be4bc2c5fc1811de1d4c2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#aaf3cd53523be4bc2c5fc1811de1d4c2d">turn_counterclockwise_</a></td></tr>
+<tr class="separator:aaf3cd53523be4bc2c5fc1811de1d4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47a26edbd65bccaa406b63f620f57f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#af47a26edbd65bccaa406b63f620f57f4">aligned_</a></td></tr>
+<tr class="separator:af47a26edbd65bccaa406b63f620f57f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5216629843e2c9de1de1de1e5480601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ae5216629843e2c9de1de1de1e5480601">goal_received_</a></td></tr>
+<tr class="separator:ae5216629843e2c9de1de1de1e5480601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ee253f3af6f5d6aff051374b82b0b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a28ee253f3af6f5d6aff051374b82b0b3">alignment_started_</a></td></tr>
+<tr class="separator:a28ee253f3af6f5d6aff051374b82b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa949703a2f47ca89a6ce6ed72f4dd5de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#aa949703a2f47ca89a6ce6ed72f4dd5de">initial_rotation_started_</a></td></tr>
+<tr class="separator:aa949703a2f47ca89a6ce6ed72f4dd5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758d1ff54f80b00a06db1cd6518a8cdc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a758d1ff54f80b00a06db1cd6518a8cdc">lateral_distance_</a></td></tr>
+<tr class="separator:a758d1ff54f80b00a06db1cd6518a8cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c7fd924218060a2704a4e0cfd33f3b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ae7c7fd924218060a2704a4e0cfd33f3b">depth_distance_</a></td></tr>
+<tr class="separator:ae7c7fd924218060a2704a4e0cfd33f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba030202ee79f6f6b69446766de8a908"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#aba030202ee79f6f6b69446766de8a908">tag1_yaw</a></td></tr>
+<tr class="separator:aba030202ee79f6f6b69446766de8a908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad011ed945a9a6ad34b6ec60a11c7cf6c"><td class="memItemLeft" align="right" valign="top">rclcpp::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ad011ed945a9a6ad34b6ec60a11c7cf6c">alignment_start_time_</a></td></tr>
+<tr class="separator:ad011ed945a9a6ad34b6ec60a11c7cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8b1b885d0dd98bd7b5cdc989918c79"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#abe8b1b885d0dd98bd7b5cdc989918c79">timer_</a></td></tr>
+<tr class="separator:abe8b1b885d0dd98bd7b5cdc989918c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77beffba0dedf9439f64aaffa5576427"><td class="memItemLeft" align="right" valign="top">rclcpp_action::Server&lt; <a class="el" href="classLocalizationServer.html#a1c7586683674f2af07f44fbbe68df24a">Localization</a> &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a77beffba0dedf9439f64aaffa5576427">action_server_</a></td></tr>
+<tr class="separator:a77beffba0dedf9439f64aaffa5576427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0821daf5cb6c5cedbc6acf2f614c68c"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::Image &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ab0821daf5cb6c5cedbc6acf2f614c68c">d455_image_subscriber_</a></td></tr>
+<tr class="separator:ab0821daf5cb6c5cedbc6acf2f614c68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585ccaf2a2ed5d55617162a0227f7284"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::Image &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#a585ccaf2a2ed5d55617162a0227f7284">d456_image_subscriber_</a></td></tr>
+<tr class="separator:a585ccaf2a2ed5d55617162a0227f7284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade125eacf16a6746606f5017a9224d3a"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ade125eacf16a6746606f5017a9224d3a">d455_overlay_publisher_</a></td></tr>
+<tr class="separator:ade125eacf16a6746606f5017a9224d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff3750ad7609967a6200c46fbbf3513"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#adff3750ad7609967a6200c46fbbf3513">d456_overlay_publisher_</a></td></tr>
+<tr class="separator:adff3750ad7609967a6200c46fbbf3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82f12a8ef58ac57c377769e42edab51"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; geometry_msgs::msg::Twist &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalizationServer.html#ac82f12a8ef58ac57c377769e42edab51">cmd_vel_publisher_</a></td></tr>
+<tr class="separator:ac82f12a8ef58ac57c377769e42edab51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides localization using AprilTags and manages an action server for localization feedback. </p>
@@ -181,6 +264,899 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor for the <a class="el" href="classLocalizationServer.html" title="Provides localization using AprilTags and manages an action server for localization feedback.">LocalizationServer</a> class. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3b97610444e1554e4734e3dd2205a5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b97610444e1554e4734e3dd2205a5cf">&#9670;&nbsp;</a></span>align_robot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::align_robot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aligns the robot with the detected AprilTag. </p>
+
+</div>
+</div>
+<a id="a199f87e3d504c1e0cef3aafa285095d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199f87e3d504c1e0cef3aafa285095d8">&#9670;&nbsp;</a></span>calculate_distances()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::calculate_distances </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Vec3d &amp;&#160;</td>
+          <td class="paramname"><em>tvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>lateral_distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>depth_distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates lateral and depth distances from translation vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tvec</td><td>Translation vector. </td></tr>
+    <tr><td class="paramname">lateral_distance</td><td>Calculated lateral distance. </td></tr>
+    <tr><td class="paramname">depth_distance</td><td>Calculated depth distance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16f8a5cbfb4adc284132e852fc90150f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f8a5cbfb4adc284132e852fc90150f">&#9670;&nbsp;</a></span>calculate_yaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::calculate_yaw </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Vec3d &amp;&#160;</td>
+          <td class="paramname"><em>rvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>tag1_yaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates yaw from rotation vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rvec</td><td>Rotation vector. </td></tr>
+    <tr><td class="paramname">tag1_yaw</td><td>Calculated yaw for tag1. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a532331fde958fc7b08a23bf2c45f42b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532331fde958fc7b08a23bf2c45f42b1">&#9670;&nbsp;</a></span>d455_detect_apriltag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::d455_detect_apriltag </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Image::SharedPtr&#160;</td>
+          <td class="paramname"><em>inputImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detects AprilTags in images from the D455 camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputImage</td><td>Image message from the D455 camera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a845675f3d528b5fbede53653f8cd4155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845675f3d528b5fbede53653f8cd4155">&#9670;&nbsp;</a></span>d456_detect_apriltag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::d456_detect_apriltag </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Image::SharedPtr&#160;</td>
+          <td class="paramname"><em>inputImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detects AprilTags in images from the D456 camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputImage</td><td>Image message from the D456 camera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6777f30b8425a9aa36c4a406b62bdb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6777f30b8425a9aa36c4a406b62bdb8e">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::execute </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt;&#160;</td>
+          <td class="paramname"><em>goal_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the localization process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">goal_handle</td><td>Handle for the current goal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab6e10ac8c67608b8f11d3c8f8e45d7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e10ac8c67608b8f11d3c8f8e45d7b3">&#9670;&nbsp;</a></span>handle_accepted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::handle_accepted </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt;&#160;</td>
+          <td class="paramname"><em>goal_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Accepts and starts the goal execution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">goal_handle</td><td>Handle for the current goal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4eb96a7ea606148af6dd9f2e47514644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb96a7ea606148af6dd9f2e47514644">&#9670;&nbsp;</a></span>handle_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp_action::CancelResponse LocalizationServer::handle_cancel </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206">GoalHandleLocalization</a> &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles cancellation requests from clients. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cancel response (accept or reject). </dd></dl>
+
+</div>
+</div>
+<a id="a6639593417024cd702519073f8f0768f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6639593417024cd702519073f8f0768f">&#9670;&nbsp;</a></span>handle_goal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp_action::GoalResponse LocalizationServer::handle_goal </td>
+          <td>(</td>
+          <td class="paramtype">const rclcpp_action::GoalUUID &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; const Localization::Goal &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles goal requests from clients. </p>
+<dl class="section return"><dt>Returns</dt><dd>Goal response (accept or reject). </dd></dl>
+
+</div>
+</div>
+<a id="aa39941fdeec20b43e0ed84f2622128bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39941fdeec20b43e0ed84f2622128bf">&#9670;&nbsp;</a></span>normalize_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LocalizationServer::normalize_angle </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalizes an angle to the range [-pi, pi]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>The angle to normalize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Normalized angle. </dd></dl>
+
+</div>
+</div>
+<a id="ac0c095febbc7cca264875ecf30e68943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c095febbc7cca264875ecf30e68943">&#9670;&nbsp;</a></span>process_apriltag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalizationServer::process_apriltag </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Image::SharedPtr &amp;&#160;</td>
+          <td class="paramname"><em>inputImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>tag1_detected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>tag2_detected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr &amp;&#160;</td>
+          <td class="paramname"><em>overlay_publisher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calculate_yaw_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes detected AprilTags, calculates pose, and publishes overlay image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputImage</td><td>Image message. </td></tr>
+    <tr><td class="paramname">tag1_detected</td><td>Flag for detecting tag1. </td></tr>
+    <tr><td class="paramname">tag2_detected</td><td>Flag for detecting tag2. </td></tr>
+    <tr><td class="paramname">overlay_publisher</td><td>Publisher for overlay image. </td></tr>
+    <tr><td class="paramname">calculate_yaw_</td><td>Boolean to calculate yaw for detected tags. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a77beffba0dedf9439f64aaffa5576427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77beffba0dedf9439f64aaffa5576427">&#9670;&nbsp;</a></span>action_server_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp_action::Server&lt;<a class="el" href="classLocalizationServer.html#a1c7586683674f2af07f44fbbe68df24a">Localization</a>&gt;::SharedPtr LocalizationServer::action_server_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af47a26edbd65bccaa406b63f620f57f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47a26edbd65bccaa406b63f620f57f4">&#9670;&nbsp;</a></span>aligned_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::aligned_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad011ed945a9a6ad34b6ec60a11c7cf6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad011ed945a9a6ad34b6ec60a11c7cf6c">&#9670;&nbsp;</a></span>alignment_start_time_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Time LocalizationServer::alignment_start_time_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28ee253f3af6f5d6aff051374b82b0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ee253f3af6f5d6aff051374b82b0b3">&#9670;&nbsp;</a></span>alignment_started_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::alignment_started_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac82f12a8ef58ac57c377769e42edab51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82f12a8ef58ac57c377769e42edab51">&#9670;&nbsp;</a></span>cmd_vel_publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;geometry_msgs::msg::Twist&gt;::SharedPtr LocalizationServer::cmd_vel_publisher_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0821daf5cb6c5cedbc6acf2f614c68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0821daf5cb6c5cedbc6acf2f614c68c">&#9670;&nbsp;</a></span>d455_image_subscriber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;sensor_msgs::msg::Image&gt;::SharedPtr LocalizationServer::d455_image_subscriber_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade125eacf16a6746606f5017a9224d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade125eacf16a6746606f5017a9224d3a">&#9670;&nbsp;</a></span>d455_overlay_publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr LocalizationServer::d455_overlay_publisher_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91c09d36b1066926d2114963bfb83d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c09d36b1066926d2114963bfb83d8b">&#9670;&nbsp;</a></span>d455_tag1_detected_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::d455_tag1_detected_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fff4e270efd274879980f0f01610dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fff4e270efd274879980f0f01610dea">&#9670;&nbsp;</a></span>d455_tag2_detected_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::d455_tag2_detected_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a585ccaf2a2ed5d55617162a0227f7284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585ccaf2a2ed5d55617162a0227f7284">&#9670;&nbsp;</a></span>d456_image_subscriber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;sensor_msgs::msg::Image&gt;::SharedPtr LocalizationServer::d456_image_subscriber_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adff3750ad7609967a6200c46fbbf3513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff3750ad7609967a6200c46fbbf3513">&#9670;&nbsp;</a></span>d456_overlay_publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr LocalizationServer::d456_overlay_publisher_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a482a7acc3ec55c3b1fddbc516cba95f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482a7acc3ec55c3b1fddbc516cba95f1">&#9670;&nbsp;</a></span>d456_tag1_detected_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::d456_tag1_detected_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9b05ce72ba3379cca7f55f81b203a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b05ce72ba3379cca7f55f81b203a32">&#9670;&nbsp;</a></span>d456_tag2_detected_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::d456_tag2_detected_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7c7fd924218060a2704a4e0cfd33f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c7fd924218060a2704a4e0cfd33f3b">&#9670;&nbsp;</a></span>depth_distance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LocalizationServer::depth_distance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5216629843e2c9de1de1de1e5480601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5216629843e2c9de1de1de1e5480601">&#9670;&nbsp;</a></span>goal_received_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::goal_received_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa949703a2f47ca89a6ce6ed72f4dd5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa949703a2f47ca89a6ce6ed72f4dd5de">&#9670;&nbsp;</a></span>initial_rotation_started_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::initial_rotation_started_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a758d1ff54f80b00a06db1cd6518a8cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758d1ff54f80b00a06db1cd6518a8cdc">&#9670;&nbsp;</a></span>lateral_distance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LocalizationServer::lateral_distance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba030202ee79f6f6b69446766de8a908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba030202ee79f6f6b69446766de8a908">&#9670;&nbsp;</a></span>tag1_yaw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LocalizationServer::tag1_yaw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe8b1b885d0dd98bd7b5cdc989918c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8b1b885d0dd98bd7b5cdc989918c79">&#9670;&nbsp;</a></span>timer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::TimerBase::SharedPtr LocalizationServer::timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf3cd53523be4bc2c5fc1811de1d4c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3cd53523be4bc2c5fc1811de1d4c2d">&#9670;&nbsp;</a></span>turn_counterclockwise_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::turn_counterclockwise_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7544185892eb8ad3ae48d30ba84884e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7544185892eb8ad3ae48d30ba84884e3">&#9670;&nbsp;</a></span>turn_direction_set_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LocalizationServer::turn_direction_set_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

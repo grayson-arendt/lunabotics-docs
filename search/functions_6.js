@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reset_5ftimer_36',['reset_timer',['../classHardwareMonitor.html#aa91f6e15f7a234a746aa5927546735fd',1,'HardwareMonitor']]],
-  ['robotcontroller_37',['RobotController',['../classRobotController.html#a1b3379c8c3350b2130f30c8bd23cba33',1,'RobotController']]]
+  ['imurotator_162',['IMURotator',['../classIMURotator.html#ad604088dbed27f392856021e5d03847f',1,'IMURotator']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['goalhandlelocalization_1',['GoalHandleLocalization',['../classLocalizationServer.html#a89741c92d8857fce7dbe78259f6d1206',1,'LocalizationServer::GoalHandleLocalization()'],['../classNavigationClient.html#a29c761c27683a9bd554e57ab03d127b2',1,'NavigationClient::GoalHandleLocalization()']]],
-  ['goalhandlenavigate_2',['GoalHandleNavigate',['../classNavigationClient.html#a73734445160ac3f66cff6cc9766bb1df',1,'NavigationClient']]]
+  ['b_5fbutton_5f_9',['b_button_',['../classRobotController.html#ac9f1617c28c9e119344980eee5b6ab45',1,'RobotController']]]
 ];

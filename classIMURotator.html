@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('classIMURotator.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIMURotator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IMURotator Class Reference</div>  </div>
@@ -116,6 +118,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad604088dbed27f392856021e5d03847f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#ad604088dbed27f392856021e5d03847f">IMURotator</a> ()</td></tr>
 <tr class="memdesc:ad604088dbed27f392856021e5d03847f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classIMURotator.html" title="Converts IMU data from NED to ENU frame for both D455 and D456 cameras.">IMURotator</a>.  <a href="classIMURotator.html#ad604088dbed27f392856021e5d03847f">More...</a><br /></td></tr>
 <tr class="separator:ad604088dbed27f392856021e5d03847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aab425f26d2747e92f026019f21f3d2a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#aab425f26d2747e92f026019f21f3d2a6">d455_imu_callback</a> (const sensor_msgs::msg::Imu::SharedPtr msg)</td></tr>
+<tr class="memdesc:aab425f26d2747e92f026019f21f3d2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for transforming and publishing D455 IMU data from NED to ENU frame.  <a href="classIMURotator.html#aab425f26d2747e92f026019f21f3d2a6">More...</a><br /></td></tr>
+<tr class="separator:aab425f26d2747e92f026019f21f3d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c417057d8e8c824f8e865668bc7ffa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#ab0c417057d8e8c824f8e865668bc7ffa">d456_imu_callback</a> (const sensor_msgs::msg::Imu::SharedPtr msg)</td></tr>
+<tr class="memdesc:ab0c417057d8e8c824f8e865668bc7ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for transforming and publishing D456 IMU data from NED to ENU frame.  <a href="classIMURotator.html#ab0c417057d8e8c824f8e865668bc7ffa">More...</a><br /></td></tr>
+<tr class="separator:ab0c417057d8e8c824f8e865668bc7ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e677213e0cff98444caf437b0872db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#a1e677213e0cff98444caf437b0872db9">transform_imu_data</a> (const sensor_msgs::msg::Imu::SharedPtr msg, std::shared_ptr&lt; sensor_msgs::msg::Imu &gt; &amp;transformed_msg)</td></tr>
+<tr class="memdesc:a1e677213e0cff98444caf437b0872db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms IMU data from NED to ENU frame.  <a href="classIMURotator.html#a1e677213e0cff98444caf437b0872db9">More...</a><br /></td></tr>
+<tr class="separator:a1e677213e0cff98444caf437b0872db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a24c71fc5f7783b45879717cf574ec93b"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::Imu &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#a24c71fc5f7783b45879717cf574ec93b">d455_imu_subscriber_</a></td></tr>
+<tr class="separator:a24c71fc5f7783b45879717cf574ec93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9065866f41170d1bee21d51bdce65956"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::Imu &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#a9065866f41170d1bee21d51bdce65956">d456_imu_subscriber_</a></td></tr>
+<tr class="separator:a9065866f41170d1bee21d51bdce65956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af184f552d07cd964e4cd1c6572b335b3"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; sensor_msgs::msg::Imu &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#af184f552d07cd964e4cd1c6572b335b3">d455_imu_publisher_</a></td></tr>
+<tr class="separator:af184f552d07cd964e4cd1c6572b335b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a6cbad7f1aaaca120da486fdb0ee42"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; sensor_msgs::msg::Imu &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIMURotator.html#aa9a6cbad7f1aaaca120da486fdb0ee42">d456_imu_publisher_</a></td></tr>
+<tr class="separator:aa9a6cbad7f1aaaca120da486fdb0ee42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Converts IMU data from NED to ENU frame for both D455 and D456 cameras. </p>
@@ -144,6 +169,209 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classIMURotator.html" title="Converts IMU data from NED to ENU frame for both D455 and D456 cameras.">IMURotator</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aab425f26d2747e92f026019f21f3d2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab425f26d2747e92f026019f21f3d2a6">&#9670;&nbsp;</a></span>d455_imu_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IMURotator::d455_imu_callback </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Imu::SharedPtr&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function for transforming and publishing D455 IMU data from NED to ENU frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>The received IMU message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0c417057d8e8c824f8e865668bc7ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c417057d8e8c824f8e865668bc7ffa">&#9670;&nbsp;</a></span>d456_imu_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IMURotator::d456_imu_callback </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Imu::SharedPtr&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback function for transforming and publishing D456 IMU data from NED to ENU frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>The received IMU message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e677213e0cff98444caf437b0872db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e677213e0cff98444caf437b0872db9">&#9670;&nbsp;</a></span>transform_imu_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IMURotator::transform_imu_data </td>
+          <td>(</td>
+          <td class="paramtype">const sensor_msgs::msg::Imu::SharedPtr&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; sensor_msgs::msg::Imu &gt; &amp;&#160;</td>
+          <td class="paramname"><em>transformed_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transforms IMU data from NED to ENU frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>The original IMU message. </td></tr>
+    <tr><td class="paramname">transformed_msg</td><td>The transformed IMU message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af184f552d07cd964e4cd1c6572b335b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af184f552d07cd964e4cd1c6572b335b3">&#9670;&nbsp;</a></span>d455_imu_publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr IMURotator::d455_imu_publisher_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24c71fc5f7783b45879717cf574ec93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c71fc5f7783b45879717cf574ec93b">&#9670;&nbsp;</a></span>d455_imu_subscriber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;sensor_msgs::msg::Imu&gt;::SharedPtr IMURotator::d455_imu_subscriber_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9a6cbad7f1aaaca120da486fdb0ee42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a6cbad7f1aaaca120da486fdb0ee42">&#9670;&nbsp;</a></span>d456_imu_publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr IMURotator::d456_imu_publisher_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9065866f41170d1bee21d51bdce65956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9065866f41170d1bee21d51bdce65956">&#9670;&nbsp;</a></span>d456_imu_subscriber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;sensor_msgs::msg::Imu&gt;::SharedPtr IMURotator::d456_imu_subscriber_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
