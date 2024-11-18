@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Lunabotics-2025 Documentation", "index.html", [
+  [ "College of DuPage Lunabotics Documentation", "index.html", [
     [ "Project Overview", "index.html", [
       [ "System Components", "index.html#autotoc_md1", null ],
       [ "Installation", "index.html#autotoc_md2", null ],
