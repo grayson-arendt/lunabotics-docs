@@ -187,10 +187,10 @@ html {
     html:not(.light-mode) {
         color-scheme: dark;
 
-        --primary-color: #1982d2;
-        --primary-dark-color: #86a9c4;
-        --primary-light-color: #4779ac;
-
+        --primary-color: #1f7a5e;
+	--primary-dark-color: #185844;
+	--primary-light-color: #62b39a;
+	
         --box-shadow: 0 2px 8px 0 rgba(0,0,0,.35);
 
         --odd-color: rgba(100,100,100,.06);
@@ -248,9 +248,9 @@ html {
 html.dark-mode {
     color-scheme: dark;
 
-    --primary-color: #1982d2;
-    --primary-dark-color: #86a9c4;
-    --primary-light-color: #4779ac;
+    --primary-color: #1f7a5e;
+    --primary-dark-color: #185844;
+    --primary-light-color: #62b39a;
 
     --box-shadow: 0 2px 8px 0 rgba(0,0,0,.30);
 
