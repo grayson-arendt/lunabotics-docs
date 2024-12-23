@@ -1,4 +1,0 @@
-<map id="ControllerTeleop" name="ControllerTeleop">
-<area shape="rect" id="node1" title="Controls the robot physically via manual and autonomous commands using various controllers." alt="" coords="5,80,133,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="18,5,121,32"/>
-</map>
