@@ -27,65 +27,40 @@ var NAVTREE =
   [ "College of DuPage Lunabotics Documentation", "index.html", [
     [ "Project Overview", "index.html", [
       [ "System Components", "index.html#autotoc_md1", null ],
-      [ "Installation", "index.html#autotoc_md2", null ],
-      [ "Simulating the Robot", "index.html#autotoc_md9", null ],
-      [ "Running the Physical Robot", "index.html#autotoc_md18", [
-        [ "SSH Into Robot Computer", "index.html#autotoc_md19", [
-          [ "(Optional) 1. Append lines to .bashrc", "index.html#autotoc_md3", null ],
-          [ "2. Setup workspace and clone repository", "index.html#autotoc_md4", null ],
-          [ "3. Install dependencies", "index.html#autotoc_md5", null ],
-          [ "(Optional) 4. Install Foxglove Studio", "index.html#autotoc_md6", null ],
-          [ "5. Build the workspace", "index.html#autotoc_md7", null ],
-          [ "6. (Optional) Set MAKEFLAG and Rebuild", "index.html#autotoc_md8", [
-            [ "Manual Mode", "index.html#autotoc_md10", null ],
-            [ "Autonomous Mode", "index.html#autotoc_md11", null ]
+      [ "Build Status", "index.html#autotoc_md2", null ],
+      [ "Installation", "index.html#autotoc_md3", null ],
+      [ "Simulating the Robot", "index.html#autotoc_md10", null ],
+      [ "Running the Physical Robot", "index.html#autotoc_md17", [
+        [ "SSH into Robot Computer", "index.html#autotoc_md18", [
+          [ "(Optional) 1. Append lines to .bashrc", "index.html#autotoc_md4", null ],
+          [ "2. Setup workspace and clone repository", "index.html#autotoc_md5", null ],
+          [ "3. Install dependencies", "index.html#autotoc_md6", null ],
+          [ "(Optional) 4. Install Foxglove Studio", "index.html#autotoc_md7", null ],
+          [ "5. Build the workspace", "index.html#autotoc_md8", null ],
+          [ "6. (Optional) Set MAKEFLAG and Rebuild", "index.html#autotoc_md9", null ],
+          [ "1. Navigate to workspace and source setup", "index.html#autotoc_md11", null ],
+          [ "Open separate terminal windows and source the workspace setup for each next step:", "index.html#autotoc_md12", null ],
+          [ "2. Launch visualization", "index.html#autotoc_md13", null ],
+          [ "3. Launch mapping and navigation", "index.html#autotoc_md14", [
+            [ "RViz2", "index.html#autotoc_md15", null ],
+            [ "Foxglove Studio", "index.html#autotoc_md16", null ]
           ] ],
-          [ "1. Navigate to workspace and source setup", "index.html#autotoc_md12", null ],
-          [ "Open separate terminal windows and source the workspace setup for each next step:", "index.html#autotoc_md13", null ],
-          [ "2. Launch visualization", "index.html#autotoc_md14", null ],
-          [ "3. Launch mapping and navigation", "index.html#autotoc_md15", [
-            [ "RViz2", "index.html#autotoc_md16", null ],
-            [ "Foxglove Studio", "index.html#autotoc_md17", null ]
-          ] ],
-          [ "1. Install and enable SSH server (host computer):", "index.html#autotoc_md20", null ],
-          [ "2. Create SSH-key (host computer)", "index.html#autotoc_md21", null ],
-          [ "3. Get username and IP address (robot computer)", "index.html#autotoc_md22", null ],
-          [ "4. Establish SSH connection (host computer)", "index.html#autotoc_md23", null ]
+          [ "1. Install and enable SSH server (host):", "index.html#autotoc_md19", null ],
+          [ "2. Install and enable SSH client (client):", "index.html#autotoc_md20", null ],
+          [ "3. Create SSH-key (client)", "index.html#autotoc_md21", null ],
+          [ "4. Get username and IP address (host)", "index.html#autotoc_md22", null ],
+          [ "5. Establish SSH connection (client)", "index.html#autotoc_md23", null ]
         ] ],
         [ "Configure Device Permissions", "index.html#autotoc_md24", [
-          [ "1. Add user to dialout group then restart (robot computer)", "index.html#autotoc_md25", null ],
-          [ "2. Setup camera udev rules (robot computer)", "index.html#autotoc_md26", null ]
+          [ "1. Add user to dialout group then restart (host)", "index.html#autotoc_md25", null ],
+          [ "2. Setup camera udev rules (host)", "index.html#autotoc_md26", null ]
         ] ],
         [ "Running Launch Files", "index.html#autotoc_md27", [
-          [ "1. Initialize SocketCAN (robot computer)", "index.html#autotoc_md28", null ],
-          [ "2. Source workspace setup (both host and robot computer)", "index.html#autotoc_md29", null ],
-          [ "3. Visualize with RViz2 (host computer)", "index.html#autotoc_md30", null ],
-          [ "4. Launch the real robot (robot computer)", "index.html#autotoc_md31", null ]
-        ] ],
-        [ "Parameters", "index.html#autotoc_md32", [
-          [ "real_launch.py", "index.html#autotoc_md33", null ],
-          [ "visualization_launch.py", "index.html#autotoc_md34", null ],
-          [ "simulation_launch.py", "index.html#autotoc_md35", null ]
+          [ "1. Source workspace setup (both client and host)", "index.html#autotoc_md28", null ],
+          [ "2. Connect controller and run joy node (client)", "index.html#autotoc_md29", null ],
+          [ "3. Visualize with RViz2 (client)", "index.html#autotoc_md30", null ],
+          [ "4. Launch the real robot (host)", "index.html#autotoc_md31", null ]
         ] ]
-      ] ],
-      [ "Project Structure", "index.html#autotoc_md36", null ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -93,7 +68,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
