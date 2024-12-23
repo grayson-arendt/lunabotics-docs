@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,108,209"/>
+<area shape="rect" id="node2" href="$classBladeJointController.html" title="Controls the blade joint pitch angle using joystick input." alt="" coords="156,5,308,32"/>
+<area shape="rect" id="node3" href="$classControllerTeleop.html" title="Controls the robot physically via manual and autonomous commands using various controllers." alt="" coords="168,56,296,83"/>
+<area shape="rect" id="node4" href="$classExcavationServer.html" title="Performs excavation sequence after receiving request from the navigation client." alt="" coords="164,107,300,133"/>
+<area shape="rect" id="node5" href="$classHardwareMonitor.html" title="Monitors the hardware connections and status of sensors (D456, D455, and LIDARs)." alt="" coords="165,157,299,184"/>
+<area shape="rect" id="node6" href="$classIMURotator.html" title="Converts IMU data from NED to ENU frame for both D455 and D456 cameras." alt="" coords="184,208,280,235"/>
+<area shape="rect" id="node7" href="$classLocalizationServer.html" title="Provides localization using AprilTags and manages an action server for localization feedback." alt="" coords="161,259,303,285"/>
+<area shape="rect" id="node8" href="$classNavigationClient.html" title=" " alt="" coords="167,309,297,336"/>
+<area shape="rect" id="node9" href="$classTopicRemapper.html" title="Remaps differential drive controller plugin odometry and velocity command topics." alt="" coords="171,360,293,387"/>
+</map>
