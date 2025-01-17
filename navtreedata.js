@@ -25,26 +25,22 @@
 var NAVTREE =
 [
   [ "College of DuPage Lunabotics Documentation", "index.html", [
-    [ "Project Overview", "index.html", [
+    [ "Project Overview", "index.html#autotoc_md0", [
       [ "System Components", "index.html#autotoc_md1", null ],
-      [ "Build Status", "index.html#autotoc_md2", null ],
-      [ "Installation", "index.html#autotoc_md3", null ],
-      [ "Simulating the Robot", "index.html#autotoc_md10", null ],
+      [ "Installation", "index.html#autotoc_md2", null ],
+      [ "Simulating the Robot", "index.html#autotoc_md9", null ],
       [ "Running the Physical Robot", "index.html#autotoc_md17", [
         [ "SSH into Robot Computer", "index.html#autotoc_md18", [
-          [ "(Optional) 1. Append lines to .bashrc", "index.html#autotoc_md4", null ],
-          [ "2. Setup workspace and clone repository", "index.html#autotoc_md5", null ],
-          [ "3. Install dependencies", "index.html#autotoc_md6", null ],
-          [ "(Optional) 4. Install Foxglove Studio", "index.html#autotoc_md7", null ],
-          [ "5. Build the workspace", "index.html#autotoc_md8", null ],
-          [ "6. (Optional) Set MAKEFLAG and Rebuild", "index.html#autotoc_md9", null ],
-          [ "1. Navigate to workspace and source setup", "index.html#autotoc_md11", null ],
-          [ "Open separate terminal windows and source the workspace setup for each next step:", "index.html#autotoc_md12", null ],
-          [ "2. Launch visualization", "index.html#autotoc_md13", null ],
-          [ "3. Launch mapping and navigation", "index.html#autotoc_md14", [
-            [ "RViz2", "index.html#autotoc_md15", null ],
-            [ "Foxglove Studio", "index.html#autotoc_md16", null ]
-          ] ],
+          [ "(Optional) 1. Append lines to .bashrc", "index.html#autotoc_md3", null ],
+          [ "2. Setup workspace and clone repository", "index.html#autotoc_md4", null ],
+          [ "3. Install dependencies", "index.html#autotoc_md5", null ],
+          [ "(Optional) 4. Install Foxglove Studio", "index.html#autotoc_md6", null ],
+          [ "5. Build the workspace", "index.html#autotoc_md7", null ],
+          [ "6. (Optional) Set MAKEFLAG and Rebuild", "index.html#autotoc_md8", null ],
+          [ "1. Navigate to workspace and source setup", "index.html#autotoc_md10", null ],
+          [ "Open separate terminal windows and source the workspace setup for each next step:", "index.html#autotoc_md11", null ],
+          [ "2. Launch visualization", "index.html#autotoc_md12", null ],
+          [ "3. Launch mapping and navigation", "index.html#autotoc_md13", null ],
           [ "1. Install and enable SSH server (host):", "index.html#autotoc_md19", null ],
           [ "2. Install SSH client (client):", "index.html#autotoc_md20", null ],
           [ "3. Create SSH-key (client)", "index.html#autotoc_md21", null ],
@@ -95,7 +91,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"localization__server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"
+"namespacemembers_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -22,9 +22,9 @@ var namespaces_dup =
       [ "set_nav2_params", "namespacesim__launch.html#a750ddbe00c580ad8eb9b0e05595de45a", null ]
     ] ],
     [ "src", "namespacesrc.html", "namespacesrc" ],
-    [ "vis_launch", "namespacevis__launch.html", [
-      [ "generate_launch_description", "namespacevis__launch.html#a9c504e0bc3ceba86422db62134734858", null ],
-      [ "set_orientation", "namespacevis__launch.html#a922214d6f436cd864759a93e80fe7224", null ],
-      [ "set_robot_description", "namespacevis__launch.html#a8e220fa0baabd01e845bfa19b1e4a892", null ]
+    [ "viz_launch", "namespaceviz__launch.html", [
+      [ "generate_launch_description", "namespaceviz__launch.html#a8a42f378b6ce3dfe39e31076bd2da4a6", null ],
+      [ "set_orientation", "namespaceviz__launch.html#abd293776ce36276f55187fd4fe33d41e", null ],
+      [ "set_robot_description", "namespaceviz__launch.html#a00de157c42e330886a34c597cca6ecd0", null ]
     ] ]
 ];

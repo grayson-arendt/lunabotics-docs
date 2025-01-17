@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vis_5flaunch_209',['vis_launch',['../namespacevis__launch.html',1,'']]]
+  ['viz_5flaunch_208',['viz_launch',['../namespaceviz__launch.html',1,'']]]
 ];

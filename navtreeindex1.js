@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"localization__server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[3,0,0,0,0,3,0,1,1],
-"namespacemembers.html":[1,1,0],
-"namespacemembers_func.html":[1,1,1],
 "namespacemembers_vars.html":[1,1,2],
 "namespacereal__launch.html":[1,0,0],
 "namespacereal__launch.html#a70ae04584e915576cb8f52222c8bdaf1":[1,0,0,0],
@@ -34,10 +31,10 @@ var NAVTREEINDEX1 =
 "namespacesrc_1_1keyboard__teleop.html#af7a4cccc5b9d954ad72004829749e694":[1,0,3,0,0],
 "namespacesrc_1_1keyboard__teleop.html#af84ed603e009dd56a3d38c1d11051b3c":[1,0,3,0,6],
 "namespacesrc_1_1keyboard__teleop.html#aff0bbd72fc0d2f7ab3a1107d7208e536":[1,0,3,0,5],
-"namespacevis__launch.html":[1,0,4],
-"namespacevis__launch.html#a8e220fa0baabd01e845bfa19b1e4a892":[1,0,4,2],
-"namespacevis__launch.html#a922214d6f436cd864759a93e80fe7224":[1,0,4,1],
-"namespacevis__launch.html#a9c504e0bc3ceba86422db62134734858":[1,0,4,0],
+"namespaceviz__launch.html":[1,0,4],
+"namespaceviz__launch.html#a00de157c42e330886a34c597cca6ecd0":[1,0,4,2],
+"namespaceviz__launch.html#a8a42f378b6ce3dfe39e31076bd2da4a6":[1,0,4,0],
+"namespaceviz__launch.html#abd293776ce36276f55187fd4fe33d41e":[1,0,4,1],
 "navigation__client_8cpp.html":[3,0,0,0,0,3,0,2],
 "navigation__client_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[3,0,0,0,0,3,0,2,1],
 "pages.html":[],
@@ -61,8 +58,8 @@ var NAVTREEINDEX1 =
 "sim__launch_8py.html#a750ddbe00c580ad8eb9b0e05595de45a":[3,0,0,0,0,0,0,1,1],
 "topic__remapper_8cpp.html":[3,0,0,0,0,6,0,3],
 "topic__remapper_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[3,0,0,0,0,6,0,3,1],
-"vis__launch_8py.html":[3,0,0,0,0,0,0,2],
-"vis__launch_8py.html#a8e220fa0baabd01e845bfa19b1e4a892":[3,0,0,0,0,0,0,2,2],
-"vis__launch_8py.html#a922214d6f436cd864759a93e80fe7224":[3,0,0,0,0,0,0,2,1],
-"vis__launch_8py.html#a9c504e0bc3ceba86422db62134734858":[3,0,0,0,0,0,0,2,0]
+"viz__launch_8py.html":[3,0,0,0,0,0,0,2],
+"viz__launch_8py.html#a00de157c42e330886a34c597cca6ecd0":[3,0,0,0,0,0,0,2,2],
+"viz__launch_8py.html#a8a42f378b6ce3dfe39e31076bd2da4a6":[3,0,0,0,0,0,0,2,0],
+"viz__launch_8py.html#abd293776ce36276f55187fd4fe33d41e":[3,0,0,0,0,0,0,2,1]
 };
